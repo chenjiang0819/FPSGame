@@ -1,0 +1,1581 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9156069693855656556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c12ee0980e8a2040bdac0ffa924f319, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 178dec2f3ff4e1c489641d7493921bd5
+  position: {x: 1581.3334, y: 2599.7122}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 7917896013265104166}
+  - {fileID: 5367950281638001794}
+--- !u!114 &-9036671939850867504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad89bb831c40c0b4fbcae5a1ef6dfea0, type: 3}
+  m_Name: MoveTo
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8e0956d22c1da55478c8a21baf193104
+  position: {x: 1928.8893, y: 2075.5557}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  speed: 7
+  updateRotation: 1
+  acceleration: 40
+  tolerance: 2
+--- !u!114 &-8899354372730248137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb76e1e721b0344cb1c8f89d0fc1ac8, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1096af814b2aa1e469cb8e734c16919f
+  position: {x: 935.1112, y: 2582.2222}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: -4471953927249054250}
+  - {fileID: 5678741168323183755}
+  - {fileID: 8111239431733732585}
+--- !u!114 &-8559538026753807886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc92434602e78fd4b8ba523694793f1e, type: 3}
+  m_Name: StartAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1857dd836f10c5b4ba7df4984d3fe1ba
+  position: {x: 2557.3333, y: 2195.5557}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &-8251540675898314013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 10211578298b2cd46a3df6c8e97a453c
+  position: {x: 1779.5236, y: 1817.3334}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Outside 20m from the player
+  child: {fileID: 7805016422251725735}
+  radius: 20
+  flip: 1
+--- !u!114 &-8032908720076927393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ae3f4776644bf458890d9e8633ac1c, type: 3}
+  m_Name: Repeat
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 28b6bbc5d03455642a5c78db08a6858c
+  position: {x: -0.000000593398, y: 112.133316}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  child: {fileID: -6320838134443560885}
+--- !u!114 &-8017043332001915392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6715c220d114f47a8d080fdcb0c40b, type: 3}
+  m_Name: CheckState
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 5d28e9a09db941e44a90e5aff8f5aa46
+  position: {x: -322.07227, y: 817.3334}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Enemy in 'Guard' state
+  child: {fileID: 1648136192661745551}
+  enemyState: 0
+--- !u!114 &-7978888516847705032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4294abeacfd09a4ab7c118d23ae0d4f, type: 3}
+  m_Name: StopAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ae9bce554f2e0864ba6eb6a7b9956cf9
+  position: {x: -397.1834, y: 1100.4445}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &-7966476244814668309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4ee19fd5566374bab56eb0a4194cde, type: 3}
+  m_Name: CheckEnemyType
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 957bd538c0d537648b407ca5e02a84d5
+  position: {x: 2078, y: 1538.6667}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Mid type enemy
+  child: {fileID: -6963692467523541748}
+  enemyType: 2
+--- !u!114 &-7952237132863247977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc92434602e78fd4b8ba523694793f1e, type: 3}
+  m_Name: StartAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ebf8044186d11bf439abf8bee384ecba
+  position: {x: 2972.2725, y: 1661.7781}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &-6963692467523541748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c12ee0980e8a2040bdac0ffa924f319, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 7485e897ead8afa48a12027c1fd52062
+  position: {x: 2078, y: 1656.6667}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: -8251540675898314013}
+  - {fileID: -1319306102180299508}
+--- !u!114 &-6898405346171308051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c12ee0980e8a2040bdac0ffa924f319, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: eebd3a75ee5f84f4ab2f1bac390e22d6
+  position: {x: 2407.5557, y: 1937.7778}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 4267327907088091233}
+  - {fileID: 5578057207913511604}
+--- !u!114 &-6662686516655251875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad89bb831c40c0b4fbcae5a1ef6dfea0, type: 3}
+  m_Name: MoveTo
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6e30714d26ef04d4ca32c80e53275cfb
+  position: {x: 408.22232, y: 2075.6228}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  speed: 10
+  updateRotation: 1
+  acceleration: 40
+  tolerance: 1
+--- !u!114 &-6320838134443560885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611b1763f94ffc048964b92d0a518fb8, type: 3}
+  m_Name: Parallel
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: bd440ebc13ed413419f497862bde0b2f
+  position: {x: 0.44458008, y: 262.35516}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: -3204842088321701061}
+  - {fileID: -1326058446143088678}
+--- !u!114 &-6309237368255308404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c12ee0980e8a2040bdac0ffa924f319, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9338b3f8844a45d47a5685c2740b2e23
+  position: {x: 511.3333, y: 1656.3334}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 5316498681730587705}
+  - {fileID: -4623092663040987843}
+--- !u!114 &-5939071792189603771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb76e1e721b0344cb1c8f89d0fc1ac8, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: dbb91662772472944a77cd775cfdfbcf
+  position: {x: 361.9999, y: 930.66675}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: -5652113294945020208}
+  - {fileID: -3350856156339220690}
+  - {fileID: 8463578998450141525}
+  - {fileID: -4347846108790056323}
+--- !u!114 &-5652113294945020208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4294abeacfd09a4ab7c118d23ae0d4f, type: 3}
+  m_Name: StopAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: eafce87608690834fa42a819c917e582
+  position: {x: 186.64613, y: 1100.4445}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &-5331001661846496713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc92434602e78fd4b8ba523694793f1e, type: 3}
+  m_Name: StartAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ee39c42cc0e81444296eb8127cc83acf
+  position: {x: 694, y: 1925.3334}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &-4623092663040987843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1f51658378f53cb48aff0d8aedc91ac6
+  position: {x: 694.4599, y: 1816}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Inside attack range
+  child: {fileID: -5331001661846496713}
+  radius: 5
+  flip: 0
+--- !u!114 &-4471953927249054250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4294abeacfd09a4ab7c118d23ae0d4f, type: 3}
+  m_Name: StopAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 0ca065fdf2773da488b669d2edac3d85
+  position: {x: 772.8889, y: 2732}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &-4347846108790056323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43dc78206387936478628631d041e685, type: 3}
+  m_Name: Wait
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 442d5b10d8ebe324da5ba908e482a244
+  position: {x: 721.3334, y: 1100.4445}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  duration: 3
+--- !u!114 &-3350856156339220690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f0c8e6c602b4340a81a85396911f69, type: 3}
+  m_Name: RandomPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 2ce835e27e0f70044a4c7c04bf109a28
+  position: {x: 361.77786, y: 1100.4445}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  radius: 20
+--- !u!114 &-3204842088321701061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b102679dfa90f9d4cb28fda1083402fa, type: 3}
+  m_Name: UpdateProperties
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 106512307b8b7164ab51e9b248713b5c
+  position: {x: -176.88898, y: 516.00006}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Update enemy properties to the blackboard
+--- !u!114 &-2960047044858555349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc92434602e78fd4b8ba523694793f1e, type: 3}
+  m_Name: StartAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c40ed305467a3b6429300da44f00c99e
+  position: {x: 1725.7778, y: 2882.12}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &-1460025298046359991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3c7028ba05a58764588b0cefeeef0808
+  position: {x: 1581.3334, y: 2475.111}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Within 10 meters from the player
+  child: {fileID: -9156069693855656556}
+  radius: 10
+  flip: 0
+--- !u!114 &-1326058446143088678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c12ee0980e8a2040bdac0ffa924f319, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 567d9096b40c8884bb064fb2b9e66d15
+  position: {x: 362.6781, y: 516.6665}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: -8017043332001915392}
+  - {fileID: -1301258422231058125}
+  - {fileID: 7017576127907876206}
+--- !u!114 &-1319306102180299508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3b25e2212ef842348a6e1513661b5d5f
+  position: {x: 2407.774, y: 1817.3334}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Within in 20m from the player
+  child: {fileID: -6898405346171308051}
+  radius: 20
+  flip: 0
+--- !u!114 &-1301258422231058125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6715c220d114f47a8d080fdcb0c40b, type: 3}
+  m_Name: CheckState
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c36482cbf3744b54ba231645e1b64608
+  position: {x: 362.66663, y: 817.3333}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Enemy in 'Patrol' state
+  child: {fileID: -5939071792189603771}
+  enemyState: 1
+--- !u!114 &-1247939299139578292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3c713777d3a704aa332964e52582e8, type: 3}
+  m_Name: GetPlayerPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 7237b2c80f4ea5b469dd03b6e86f625f
+  position: {x: 2236.4446, y: 2343.5557}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  aroundPlayer: 1
+  distanceToPlayer: 18
+  randomRange: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1920d513cc439a44e8850464d7acfed9, type: 3}
+  m_Name: BasicEnemyBT
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 1495369092246577169}
+  treeState: 0
+  nodes:
+  - {fileID: 1495369092246577169}
+  - {fileID: -8032908720076927393}
+  - {fileID: -8017043332001915392}
+  - {fileID: -1326058446143088678}
+  - {fileID: -1301258422231058125}
+  - {fileID: 7017576127907876206}
+  - {fileID: 3651325169764998649}
+  - {fileID: 402671469940693244}
+  - {fileID: 7754277236969127954}
+  - {fileID: 1165001089621606829}
+  - {fileID: -7966476244814668309}
+  - {fileID: -3204842088321701061}
+  - {fileID: -6662686516655251875}
+  - {fileID: 105409055347652812}
+  - {fileID: 8111239431733732585}
+  - {fileID: -9036671939850867504}
+  - {fileID: 1960538295940728082}
+  - {fileID: 7805016422251725735}
+  - {fileID: -5939071792189603771}
+  - {fileID: -3350856156339220690}
+  - {fileID: 8463578998450141525}
+  - {fileID: -4347846108790056323}
+  - {fileID: 2287974317127586017}
+  - {fileID: 5678741168323183755}
+  - {fileID: 1636255740507344181}
+  - {fileID: 5316498681730587705}
+  - {fileID: -4623092663040987843}
+  - {fileID: -6309237368255308404}
+  - {fileID: -6320838134443560885}
+  - {fileID: 4046565524762213192}
+  - {fileID: 8382697434624959699}
+  - {fileID: -1460025298046359991}
+  - {fileID: -8899354372730248137}
+  - {fileID: -6963692467523541748}
+  - {fileID: -8251540675898314013}
+  - {fileID: -1319306102180299508}
+  - {fileID: -5331001661846496713}
+  - {fileID: -2960047044858555349}
+  - {fileID: -4471953927249054250}
+  - {fileID: 7917896013265104166}
+  - {fileID: 5367950281638001794}
+  - {fileID: -9156069693855656556}
+  - {fileID: 4549193199291842861}
+  - {fileID: 7715169604628982136}
+  - {fileID: 741963806116883637}
+  - {fileID: 3542468073467387637}
+  - {fileID: 1648136192661745551}
+  - {fileID: -7978888516847705032}
+  - {fileID: -5652113294945020208}
+  - {fileID: 3562196290625320780}
+  - {fileID: -6898405346171308051}
+  - {fileID: 4267327907088091233}
+  - {fileID: 5578057207913511604}
+  - {fileID: 7265417065932581556}
+  - {fileID: 3322290989091099828}
+  - {fileID: -1247939299139578292}
+  - {fileID: 9098071685402634617}
+  - {fileID: -8559538026753807886}
+  - {fileID: -7952237132863247977}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 1
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+--- !u!114 &105409055347652812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43dc78206387936478628631d041e685, type: 3}
+  m_Name: Wait
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: b3ab928111bbb4f4a803a95608868b85
+  position: {x: -238.0723, y: 1100.4445}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  duration: 5
+--- !u!114 &402671469940693244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4ee19fd5566374bab56eb0a4194cde, type: 3}
+  m_Name: CheckEnemyType
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9886c73c52c550342b6504576bb0a07a
+  position: {x: 510.66675, y: 1526.6667}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Suicide type enemy
+  child: {fileID: -6309237368255308404}
+  enemyType: 0
+--- !u!114 &741963806116883637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb76e1e721b0344cb1c8f89d0fc1ac8, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a821df36b7aba5248b21a23f35781087
+  position: {x: 1431.5555, y: 2882.12}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 4549193199291842861}
+  - {fileID: 7715169604628982136}
+  - {fileID: 3542468073467387637}
+--- !u!114 &1165001089621606829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4ee19fd5566374bab56eb0a4194cde, type: 3}
+  m_Name: CheckEnemyType
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 0eb709ccf9f1e1748b61963dcc65c6e3
+  position: {x: 2972.2725, y: 1538.6669}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Far type enemy
+  child: {fileID: -7952237132863247977}
+  enemyType: 3
+--- !u!114 &1495369092246577169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b026d2358f9c25842b41142243301a4e, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 1c21fd92565d3b4488c2d10a25254cd7
+  position: {x: 0, y: 0}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  child: {fileID: -8032908720076927393}
+--- !u!114 &1636255740507344181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3c713777d3a704aa332964e52582e8, type: 3}
+  m_Name: GetPlayerPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 79e62f004d227b748bf8dc79718f41b9
+  position: {x: 1763.5557, y: 2074.6667}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  aroundPlayer: 1
+  distanceToPlayer: 18
+  randomRange: 4
+--- !u!114 &1648136192661745551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb76e1e721b0344cb1c8f89d0fc1ac8, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9f04884f2d35c4c4ab54558a9056fdc0
+  position: {x: -322.07227, y: 941.7778}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: -7978888516847705032}
+  - {fileID: 105409055347652812}
+--- !u!114 &1960538295940728082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb76e1e721b0344cb1c8f89d0fc1ac8, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c1bba2a77b9f3434387a0094d9f8d7d0
+  position: {x: 333.11115, y: 1925.6667}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 2287974317127586017}
+  - {fileID: -6662686516655251875}
+--- !u!114 &2287974317127586017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3c713777d3a704aa332964e52582e8, type: 3}
+  m_Name: GetPlayerPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3ef13266aaf113449bc8f6eae881a5c1
+  position: {x: 258, y: 2075.3333}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  aroundPlayer: 0
+  distanceToPlayer: 2.5
+  randomRange: 2
+--- !u!114 &3322290989091099828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4294abeacfd09a4ab7c118d23ae0d4f, type: 3}
+  m_Name: StopAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a298cfbed85270645ae5f3ade4a4cff0
+  position: {x: 2064.4446, y: 2344}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &3542468073467387637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad89bb831c40c0b4fbcae5a1ef6dfea0, type: 3}
+  m_Name: MoveTo
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: fbecdd7b372789f4e8791d15715a1387
+  position: {x: 1605.7778, y: 3023.009}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  speed: 3
+  updateRotation: 1
+  acceleration: 40
+  tolerance: 1
+--- !u!114 &3562196290625320780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4294abeacfd09a4ab7c118d23ae0d4f, type: 3}
+  m_Name: StopAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 89c0647df19394344a487b9172db25d9
+  position: {x: 1590.6669, y: 2074.6667}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &3651325169764998649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c12ee0980e8a2040bdac0ffa924f319, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 741f184862d4530448a9230c98273ce4
+  position: {x: 1603.3333, y: 940.6666}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 402671469940693244}
+  - {fileID: 7754277236969127954}
+  - {fileID: -7966476244814668309}
+  - {fileID: 1165001089621606829}
+--- !u!114 &4046565524762213192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c12ee0980e8a2040bdac0ffa924f319, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 539cb6be37e534946a5febdbe7d98f16
+  position: {x: 1110.6666, y: 2313.7778}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 8382697434624959699}
+  - {fileID: -1460025298046359991}
+--- !u!114 &4267327907088091233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 917f575040fca204abda6ed3a7957db8
+  position: {x: 2234.2222, y: 2080.889}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Too close to the player (8m)
+  child: {fileID: 7265417065932581556}
+  radius: 8
+  flip: 0
+--- !u!114 &4549193199291842861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4294abeacfd09a4ab7c118d23ae0d4f, type: 3}
+  m_Name: StopAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f77eeee7f4b60d042a90209300fe964c
+  position: {x: 1251.5557, y: 3023.009}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+--- !u!114 &5316498681730587705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 624f0609c038cb54d85b98bf5d00a440
+  position: {x: 332.72952, y: 1816}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Outside attack range
+  child: {fileID: 1960538295940728082}
+  radius: 5
+  flip: 1
+--- !u!114 &5367950281638001794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: d75764b43e5949248838de23b2091f9b
+  position: {x: 1725.7778, y: 2765.6758}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Good distance to the player
+  child: {fileID: -2960047044858555349}
+  radius: 3
+  flip: 1
+--- !u!114 &5578057207913511604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: adfe18e0ede3c8549962f6a1a8c24d11
+  position: {x: 2557.7778, y: 2080.889}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Good distance to the player
+  child: {fileID: -8559538026753807886}
+  radius: 8
+  flip: 1
+--- !u!114 &5678741168323183755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3c713777d3a704aa332964e52582e8, type: 3}
+  m_Name: GetPlayerPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: bb2495e0decdde44e9a0546c2f4410bf
+  position: {x: 935.1111, y: 2731.5557}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  aroundPlayer: 1
+  distanceToPlayer: 7
+  randomRange: 2
+--- !u!114 &7017576127907876206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6715c220d114f47a8d080fdcb0c40b, type: 3}
+  m_Name: CheckState
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f3ff0ec06b59ef948a03725276e0802a
+  position: {x: 1604, y: 816.6666}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Enemy in 'Attack' state
+  child: {fileID: 3651325169764998649}
+  enemyState: 2
+--- !u!114 &7265417065932581556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb76e1e721b0344cb1c8f89d0fc1ac8, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6d48e2738709b294db5e0e23c505bbef
+  position: {x: 2234.2222, y: 2195.5557}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 3322290989091099828}
+  - {fileID: -1247939299139578292}
+  - {fileID: 9098071685402634617}
+--- !u!114 &7715169604628982136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3c713777d3a704aa332964e52582e8, type: 3}
+  m_Name: GetPlayerPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 125d5febe04dfa94eae742ae11697397
+  position: {x: 1432.0001, y: 3023.009}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  aroundPlayer: 1
+  distanceToPlayer: 7
+  randomRange: 2
+--- !u!114 &7754277236969127954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4ee19fd5566374bab56eb0a4194cde, type: 3}
+  m_Name: CheckEnemyType
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ac86d74b06e22fc47963b4a75de0652e
+  position: {x: 1110.6666, y: 2195.5557}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Close type enemy
+  child: {fileID: 4046565524762213192}
+  enemyType: 1
+--- !u!114 &7805016422251725735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb76e1e721b0344cb1c8f89d0fc1ac8, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: fda937b4bc5c73f4788bb44f117a3e8c
+  position: {x: 1779.5557, y: 1937.7778}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  children:
+  - {fileID: 3562196290625320780}
+  - {fileID: 1636255740507344181}
+  - {fileID: -9036671939850867504}
+--- !u!114 &7917896013265104166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 30769124c70859e49a70df50128ada2a
+  position: {x: 1431.5555, y: 2765.6758}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Too close to the player (3m)
+  child: {fileID: 741963806116883637}
+  radius: 3
+  flip: 0
+--- !u!114 &8111239431733732585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad89bb831c40c0b4fbcae5a1ef6dfea0, type: 3}
+  m_Name: MoveTo
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 68675e545ee54a24ea34bc915eb82c09
+  position: {x: 1111.9999, y: 2732.4446}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  speed: 3
+  updateRotation: 1
+  acceleration: 40
+  tolerance: 1
+--- !u!114 &8382697434624959699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8dbd8a9d4964b4d83b2db58e70737f, type: 3}
+  m_Name: WithinRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b532da63bba143f4086aca3c191bc37d
+  position: {x: 931.1112, y: 2469.7778}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: Outside 10 meters from the player
+  child: {fileID: -8899354372730248137}
+  radius: 10
+  flip: 1
+--- !u!114 &8463578998450141525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad89bb831c40c0b4fbcae5a1ef6dfea0, type: 3}
+  m_Name: MoveTo
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1ba4ec365eaec5147800b47eb363aa42
+  position: {x: 536.00006, y: 1100.4445}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  speed: 5
+  updateRotation: 1
+  acceleration: 40
+  tolerance: 1
+--- !u!114 &9098071685402634617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad89bb831c40c0b4fbcae5a1ef6dfea0, type: 3}
+  m_Name: MoveTo
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: d88efa49e6f2bca46bf74e970208c8c3
+  position: {x: 2411.111, y: 2343.5557}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    currentState: 0
+    enemyType: 0
+    player: {fileID: 0}
+    reachedDestination: 1
+  description: 
+  speed: 7
+  updateRotation: 1
+  acceleration: 40
+  tolerance: 2
