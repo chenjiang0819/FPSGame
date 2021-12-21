@@ -50,7 +50,7 @@ You can add a link to your Gameplay Video here but you must have already submit 
 
 In the near future, a giant meteorite hit the Earth and eliminates most of the humans. The Earth breaks apart and the fragments wander in the universe. The remaining lives in the last human city under the nano shield. 
 
-A few years later, the AI awakes, takes over the human government, and starts to remould human body to machinery in order to "protect" huamnity from giant meteorite disater. 
+A few years later, the AI takes over the human government, and starts to remould human body to machinery in order to "protect" huamnity from giant meteorite disater. 
 
 You, who escaped from the AI remoulding manufactory, half robot half human, decided to resist AI tyranny...
 
