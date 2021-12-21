@@ -46,8 +46,6 @@ You can add a link to your Gameplay Video here but you must have already submit 
 
 **Title**: Wandering City
 
-**Genre**: Third Person Shooter
-
 **Background Story**: 
 
 In the near future, a giant meteorite hit the Earth and eliminates most of the humans. The Earth breaks apart and the fragments wander in the universe. The remaining lives in the last human city under the nano shield. 
