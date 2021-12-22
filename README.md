@@ -35,10 +35,10 @@ You can add a link to your Gameplay Video here but you must have already submit 
 
 | Name | Task | State |
 | :---         |     :---:      |          ---: |
-| Chen Jiang | Gameplay, Background Story, Particles, Mission Component, Audio | Finished |
+| Chen Jiang | Gameplay, Background Story, Particles, Mission Component, Audio, Evaluation | Finished |
 | Linyan Zhu | Gameplay, Shaders, AI, Boss Fight | Finished |
 | Xinyue Zhang | Procedural Generation, Boss Scene, Evaluation | Finished |
-| Zhihui Chen | Background Story, Main Scene, , Evaluation | Finished |
+| Zhihui Chen | Background Story, Main Scene, Audio, Evaluation | Finished |
 
 
 
