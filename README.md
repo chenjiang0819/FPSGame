@@ -15,7 +15,6 @@ You can add a link to your Gameplay Video here but you must have already submit 
 
 ## Table of contents
 
-* [Team Members](#team-members)
 * [Explanation of the game](#explanation-of-the-game)
 * [Technologies](#technologies)
 * [How To Use It](#how-to-use-it)
@@ -28,19 +27,6 @@ You can add a link to your Gameplay Video here but you must have already submit 
 * [Evaluation techniques](#evaluation-techniques)
     * [Feedback and changes](#feedback-and-changes)
 * [References](#References)
-
-
-
-## Team Members
-
-| Name | Task | State |
-| :---         |     :---:      |          ---: |
-| Chen Jiang | Gameplay, Background Story, Particles, Mission Component, Audio, Evaluation | Finished |
-| Linyan Zhu | Gameplay, Shaders, AI, Boss Fight | Finished |
-| Xinyue Zhang | Procedural Generation, Boss Scene, Evaluation | Finished |
-| Zhihui Chen | Background Story, Main Scene, Audio, Evaluation | Finished |
-
-
 
 ## Explanation of the game
 
