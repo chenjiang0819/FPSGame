@@ -7,10 +7,6 @@
 
 Final Electronic Submission (project): **4pm, November 1**
 
-Do not forget **One member** of your group must submit a text file to the LMS (Canvas) by the due date which includes the commit ID of your final submission.
-
-You can add a link to your Gameplay Video here but you must have already submit it by **4pm, October 17**
-
 # Project-2 README
 
 ## Table of contents
