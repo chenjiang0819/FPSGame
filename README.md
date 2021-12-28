@@ -46,8 +46,6 @@ You can add a link to your Gameplay Video here but you must have already submit 
 
 **Title**: Wandering City
 
-**Genre**: Third Person Shooter
-
 **Background Story**: 
 
 In the near future, a giant meteorite hit the Earth and eliminates most of the humans. The Earth breaks apart and the fragments wander in the universe. The remaining lives in the last human city under the nano shield. 
@@ -164,8 +162,6 @@ The boss is very big, so we also make the floor very big, to ensure the player w
 **Boss:**
 
 There aren’t many <u>low-poly</u> *robot* **boss** models on the web, so we choose to create one on our own.
-
-~~Luckily, no one in our team knows how to use blender.~~
 
 Speaking of low-poly, surely nothing is better than a cube. 
 
