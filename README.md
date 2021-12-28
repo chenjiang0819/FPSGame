@@ -35,10 +35,10 @@ You can add a link to your Gameplay Video here but you must have already submit 
 
 | Name | Task | State |
 | :---         |     :---:      |          ---: |
-| Linyan Zhu | Gameplay, Shaders, Boss Fight, AI, UI, Audio | Finished |
+| Linyan Zhu | Gameplay, Shaders, Boss Fight, Artificial Intelligence, User Interface, Audio | Finished |
 | Chen Jiang | Story, Particles, Mission Components, Main Scene, Audio, Evaluation | Finished |
-| Xinyue Zhang | Procedural Generation, Boss Scene, Evaluation, UI | Finished |
-| Zhihui Chen | Main Scene, Evaluation, Audio, AI | Finished |
+| Xinyue Zhang | Procedural Generation, Boss Scene, Evaluation, User Interface | Finished |
+| Zhihui Chen | Main Scene, Evaluation, Audio, Artificial Intelligence | Finished |
 
 
 
